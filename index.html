@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Saaksshi Jilhewar — ML Engineer</title>
+<title>Saaksshi Jilhewar â ML Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,8 +30,8 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     --ink:       #f5f5f7;
     --ink-dim:   #9b9bab;
     --ink-faint: #5e5e70;
-    --accent:    #ff6b2b;   /* signal orange — AI */
-    --accent-2:  #3d9eff;   /* electric blue — ChemE */
+    --accent:    #ff6b2b;   /* signal orange â AI */
+    --accent-2:  #3d9eff;   /* electric blue â ChemE */
     --warn:      #ffd60a;   /* vibrant yellow */
     --grid:      rgba(255,255,255,0.025);
   }
@@ -322,7 +322,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   .case[data-accent="che"]:hover { border-color: var(--accent-2); }
   .case[data-accent="trophy"] { border-color: color-mix(in oklab, var(--warn) 45%, var(--line)); }
   .case[data-accent="trophy"]::before {
-    content:"★"; position:absolute; top:16px; right:18px; color: var(--warn); font-size: 18px;
+    content:"â"; position:absolute; top:16px; right:18px; color: var(--warn); font-size: 18px;
   }
   .case-top { display:flex; justify-content: space-between; gap:10px; flex-wrap: wrap; margin-bottom: 12px; }
   .case-tag { font-size: 10px; letter-spacing: 0.16em; color: var(--ink-faint); }
@@ -379,7 +379,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   .sec-sub { color: var(--ink-dim); margin-top: 8px; max-width: 60ch; }
 
   /* ===================================================================
-     ABOUT — molecular card
+     ABOUT â molecular card
   =================================================================== */
   .about-grid {
     display:grid; grid-template-columns: 1.2fr 1fr; gap: 40px;
@@ -433,7 +433,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   .exp-co b  { color: var(--accent); font-weight: 500; }
   .exp-bullets { font-size: 13px; color: var(--ink); margin: 0; padding-left: 16px; }
   .exp-bullets li { margin-bottom: 4px; }
-  .exp-bullets li::marker { color: var(--accent-2); content: "▸ "; }
+  .exp-bullets li::marker { color: var(--accent-2); content: "â¸ "; }
   .exp-tags { display:flex; flex-wrap:wrap; gap:6px; justify-content: flex-end; }
   @media (max-width: 760px){ .exp-tags { justify-content: flex-start; } }
   .tag {
@@ -484,12 +484,12 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   }
   .hackathon-card { border-color: color-mix(in oklab, var(--warn) 50%, var(--line)); }
   .hackathon-card::before {
-    content: "★"; position:absolute; top:14px; right:16px;
+    content: "â"; position:absolute; top:14px; right:16px;
     color: var(--warn); font-size: 18px;
   }
 
   /* ===================================================================
-     SKILLS — periodic table
+     SKILLS â periodic table
   =================================================================== */
   .skills-grid {
     display: grid;
@@ -653,7 +653,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     width: 10px; display: inline-block;
   }
   details.more[open] > summary::before {
-    content: "−";
+    content: "â";
   }
   details.more > summary:hover { color: var(--accent); }
   details.more > .more-body {
@@ -711,7 +711,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     border-bottom: 1px dashed var(--line);
   }
   .commit::before {
-    content: "●";
+    content: "â";
     position: absolute; left: -34px; top: 18px;
     color: var(--accent-2);
     font-size: 14px;
@@ -783,11 +783,53 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     display: flex; gap: 14px; align-items: baseline;
   }
   .commit-initial::before {
-    content: "○";
+    content: "â";
     position: absolute; left: -34px; top: 14px;
     color: var(--ink-faint); font-size: 12px;
   }
   .commit-initial .sha { color: var(--ink-dim); }
+
+/* ===================================================================
+   CERTIFICATIONS — Google Cloud badges grid
+=================================================================== */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.cert-badge {
+  border: 1px solid var(--line-2);
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: transform .12s, border-color .15s;
+  border-color: color-mix(in oklab, #4285f4 25%, var(--line-2));
+}
+.cert-badge:hover {
+  transform: translateY(-2px);
+  border-color: #4285f4;
+}
+.cert-icon {
+  font-size: 20px;
+  color: #4285f4;
+  line-height: 1;
+}
+.cert-name {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.3;
+}
+.cert-date {
+  font-size: 10px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
 </style>
 </head>
 <body>
@@ -797,7 +839,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   <div class="topbar-inner">
     <div style="display:flex; align-items:center;">
       <span class="dots"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i></span>
-      <span>~/saaksshi/portfolio — 1 tab — 89x24</span>
+      <span>~/saaksshi/portfolio â 1 tab â 89x24</span>
     </div>
     <nav>
       <a href="#work">case studies</a>
@@ -805,6 +847,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
       <a href="#research">research</a>
       <a href="#edu">edu</a>
       <a href="#skills">skills</a>
+        <a href="#certs">certs</a>
       <a href="#hobbies">hobbies</a>
       <button id="mode-toggle" class="mode-toggle" aria-label="toggle dark/light mode" title="toggle theme">
         <svg class="sun-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -819,27 +862,27 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="kicker">ML Engineer · Seattle · shipping since 2021</span>
+        <span class="kicker">ML Engineer Â· Seattle Â· shipping since 2021</span>
         <h1 class="name">Saaksshi<br>Jil<em>hewar</em>.</h1>
-        <div class="name-phonetic">/ˈsɑːk.ʃi dʒɪl.ˈhe.ʋəɾ/ — yes, two k's. no, it's not a typo.</div>
+        <div class="name-phonetic">/ËsÉËk.Êi dÊÉªl.Ëhe.ÊÉÉ¾/ â yes, two k's. no, it's not a typo.</div>
 
         <p class="tagline">
-          I build <span class="hl">ML &amp; LLM systems</span> that survive first contact with messy enterprise data —
+          I build <span class="hl">ML &amp; LLM systems</span> that survive first contact with messy enterprise data â
           forecasting, agents, optimization, and the occasional <span class="hl2">carbon-capture pipeline</span>.
           CMU AI Engineering, early hire at a fast startup, writer of code that gets deployed (not just demoed).
         </p>
 
         <div class="hero-meta">
-          <span><b>Now</b> · Senior DS @ Neuralix</span>
-          <span><b>Before</b> · CMU M.S. AI Eng + ChemE · GPA 3.91</span>
-          <span><b>Wins</b> · Shell Global Changemakers '24 — DeCarbonix</span>
-          <span><b>Uptime</b> · mostly</span>
+          <span><b>Now</b> Â· Senior DS @ Neuralix</span>
+          <span><b>Before</b> Â· CMU M.S. AI Eng + ChemE Â· GPA 3.91</span>
+          <span><b>Wins</b> Â· Shell Global Changemakers '24 â DeCarbonix</span>
+          <span><b>Uptime</b> Â· mostly</span>
         </div>
 
         <div class="cta-row">
-          <a class="btn primary" href="/cdn-cgi/l/email-protection#09637a6868627a7a6160496e64686065276a6664">✉ <span class="__cf_email__" data-cfemail="bfd5ccdeded4ccccd7d6ffd8d2ded6d391dcd0d2">[email&#160;protected]</span></a>
-          <a class="btn" href="https://linkedin.com/in/saaksshi" target="_blank">↗ linkedin/in/saaksshi</a>
-          <a class="btn" href="/cdn-cgi/l/email-protection#e08a9381818b93938889a0878d81898cce838f8ddf9395828a858394ddb28593958d85c5d2d092859195859394">✉ request resume</a>
+          <a class="btn primary" href="/cdn-cgi/l/email-protection#09637a6868627a7a6160496e64686065276a6664">â <span class="__cf_email__" data-cfemail="bfd5ccdeded4ccccd7d6ffd8d2ded6d391dcd0d2">[email&#160;protected]</span></a>
+          <a class="btn" href="https://linkedin.com/in/saaksshi" target="_blank">â linkedin/in/saaksshi</a>
+          <a class="btn" href="/cdn-cgi/l/email-protection#e08a9381818b93938889a0878d81898cce838f8ddf9395828a858394ddb28593958d85c5d2d092859195859394">â request resume</a>
         </div>
 
         <div class="hero-about">
@@ -852,7 +895,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
               <p>
                 I got very good at the unglamorous half of AI: scoping with stakeholders, taming messy time-series,
                 shipping forecasting and anomaly-detection systems for <b>energy, logistics, mining, and steel</b>,
-                and gluing LLMs into <i>actual</i> workflows — structured prompts, tool use, multi-step logic, not vibes.
+                and gluing LLMs into <i>actual</i> workflows â structured prompts, tool use, multi-step logic, not vibes.
               </p>
               <p>
                 Before Neuralix: co-op at <b>Harley-Davidson</b> on AWS Personalize,
@@ -860,7 +903,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
                 and a B.Tech Chemical Eng at VIT.
               </p>
               <p>
-                Soft spot for energy + industrial problems — <span class="witty">CO₂ logistics is secretly a very
+                Soft spot for energy + industrial problems â <span class="witty">COâ logistics is secretly a very
                 spicy MILP</span>. Two peer-reviewed papers, a forthcoming book chapter, and a filed patent.
                 I care about systems that are <b>traceable, reusable, and boring</b> in production.
               </p>
@@ -869,10 +912,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         </div>
       </div>
 
-      <!-- Diptych: ChemE process ≡ ML pipeline -->
+      <!-- Diptych: ChemE process â¡ ML pipeline -->
       <aside class="hero-pid" aria-label="ChemE / ML isomorphism diagram">
         <div class="pid-head">
-          <span class="pid-title">FIG. 01 · SAME SHAPE, DIFFERENT VOCABULARY</span>
+          <span class="pid-title">FIG. 01 Â· SAME SHAPE, DIFFERENT VOCABULARY</span>
           <span class="pid-meta">REV 4.2</span>
         </div>
         <svg class="pid-svg" viewBox="0 0 360 350" xmlns="http://www.w3.org/2000/svg">
@@ -890,7 +933,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
           <!-- =============== BAND A :: CHEME =============== -->
           <g class="band band-che">
-            <text x="0" y="22" class="band-label">A · CHEMICAL ENGINEERING</text>
+            <text x="0" y="22" class="band-label">A Â· CHEMICAL ENGINEERING</text>
 
             <!-- feed tank -->
             <rect x="8" y="52" width="44" height="52" rx="1" fill="url(#hatch)" stroke="currentColor" stroke-width="1" style="color:var(--ink-dim)"/>
@@ -950,7 +993,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
           <g class="iso-band">
             <line x1="16" y1="168" x2="344" y2="168" stroke="var(--line)" stroke-dasharray="2 3"/>
             <rect x="148" y="158" width="64" height="20" rx="2" fill="var(--panel)" stroke="var(--warn)" stroke-width="0.8"/>
-            <text x="180" y="169" class="iso-sym">≅</text>
+            <text x="180" y="169" class="iso-sym">â</text>
             <text x="180" y="175" class="iso-txt">isomorphism</text>
             <!-- dotted vertical maps -->
             <g stroke="var(--warn)" stroke-width="0.6" stroke-dasharray="1.5 2" opacity="0.6">
@@ -964,12 +1007,12 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
           <!-- =============== BAND B :: ML =============== -->
           <g class="band band-ml">
-            <text x="0" y="222" class="band-label accent">B · MACHINE LEARNING</text>
+            <text x="0" y="222" class="band-label accent">B Â· MACHINE LEARNING</text>
 
             <!-- data tank -->
             <rect x="8" y="252" width="44" height="52" rx="1" fill="url(#hatch)" stroke="var(--accent)" stroke-width="1" style="color:var(--accent)"/>
             <text x="30" y="318" class="n-label accent">DATA</text>
-            <text x="30" y="330" class="n-sub accent">x₁…xₙ</text>
+            <text x="30" y="330" class="n-sub accent">xââ¦xâ</text>
 
             <line class="pipe-a" x1="52" y1="278" x2="82" y2="278" marker-end="url(#arr-a)"/>
             <text x="67" y="272" class="stream-a">batch</text>
@@ -977,7 +1020,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
             <!-- model (capsule) -->
             <rect x="82" y="254" width="48" height="48" rx="24" fill="none" stroke="var(--accent)" stroke-width="1"/>
             <text x="106" y="282" class="n-label accent">MODEL</text>
-            <text x="106" y="330" class="n-sub accent">θ · nn</text>
+            <text x="106" y="330" class="n-sub accent">Î¸ Â· nn</text>
             <!-- instrument LR -->
             <line class="sig-a" x1="106" y1="254" x2="106" y2="238"/>
             <circle class="inst-a" cx="106" cy="230" r="9"/>
@@ -993,11 +1036,11 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
               <line x1="160" y1="278" x2="210" y2="278"/>
               <line x1="160" y1="288" x2="210" y2="288"/>
             </g>
-            <text x="185" y="254" class="n-label sm accent">φ(x)</text>
+            <text x="185" y="254" class="n-label sm accent">Ï(x)</text>
             <text x="185" y="310" class="n-sub accent">features</text>
 
             <line class="pipe-a" x1="210" y1="278" x2="240" y2="278" marker-end="url(#arr-a)"/>
-            <text x="225" y="272" class="stream-a">ŷ</text>
+            <text x="225" y="272" class="stream-a">Å·</text>
 
             <!-- eval column -->
             <rect x="240" y="240" width="26" height="76" rx="13" fill="none" stroke="var(--accent)" stroke-width="1"/>
@@ -1008,10 +1051,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
               <line x1="240" y1="290" x2="266" y2="290"/>
               <line x1="240" y1="302" x2="266" y2="302"/>
             </g>
-            <text x="253" y="330" class="n-sub accent">ℒ · eval</text>
+            <text x="253" y="330" class="n-sub accent">â Â· eval</text>
 
             <line class="pipe-a" x1="266" y1="278" x2="296" y2="278" marker-end="url(#arr-a)"/>
-            <text x="281" y="272" class="stream-a">ŷ*</text>
+            <text x="281" y="272" class="stream-a">Å·*</text>
 
             <!-- prediction -->
             <circle cx="322" cy="278" r="22" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
@@ -1036,10 +1079,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <section id="work">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 01 / 06</div>
+      <div class="sec-num">Â§ 01 / 06</div>
       <div>
         <h2 class="sec-title">Selected <em>case studies</em>.</h2>
-        <p class="sec-sub">A grab-bag of things I've actually built. Industry projects, research, and coursework that made it past the notebook stage — grouped by what they taught me.</p>
+        <p class="sec-sub">A grab-bag of things I've actually built. Industry projects, research, and coursework that made it past the notebook stage â grouped by what they taught me.</p>
       </div>
     </div>
 
@@ -1056,8 +1099,8 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case feature" data-accent="ai" data-cat="ml industry">
         <div class="case-top">
-          <span class="case-tag">NEURALIX · 2024–now · FLAGSHIP</span>
-          <span class="case-where">energy · logistics · mining · steel</span>
+          <span class="case-tag">NEURALIX Â· 2024ânow Â· FLAGSHIP</span>
+          <span class="case-where">energy Â· logistics Â· mining Â· steel</span>
         </div>
         <h3>Forecasts, anomalies, and LLM agents that behave.</h3>
         <p class="lede-dim">Early ML-eng hire. Forecasting + anomaly-detection systems + LLM agents for energy, logistics, mining, steel.</p>
@@ -1065,7 +1108,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
           <summary>more</summary>
           <div class="more-body">
             <p>Early ML-eng hire. I take a client with 400k rows of messy CSVs and a vague KPI, and return a
-          multi-site forecasting + anomaly-detection system with dashboards, alerts, and a retraining schedule —
+          multi-site forecasting + anomaly-detection system with dashboards, alerts, and a retraining schedule â
           running on PyTorch, Airflow, and whichever cloud they already pay for. Plus LLM agents for inventory
           duplicate-detection, obsolete-stock flagging, and usage-driven recommendations with structured prompts &amp; tool use.</p>
           </div>
@@ -1079,11 +1122,11 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case feature" data-accent="trophy" data-cat="ml che research">
         <div class="case-top">
-          <span class="case-tag">SHELL · 2024 · WINNER ★</span>
+          <span class="case-tag">SHELL Â· 2024 Â· WINNER â</span>
           <span class="case-where">Global Changemakers of Tomorrow</span>
         </div>
-        <h3>DeCarbonix — an AI-first fleet-management platform for decarbonization.</h3>
-        <p class="lede-dim">Led the winning team at Shell's Global Changemakers '24 — AI fleet-management for decarbonization.</p>
+        <h3>DeCarbonix â an AI-first fleet-management platform for decarbonization.</h3>
+        <p class="lede-dim">Led the winning team at Shell's Global Changemakers '24 â AI fleet-management for decarbonization.</p>
         <details class="more">
           <summary>more</summary>
           <div class="more-body">
@@ -1099,15 +1142,15 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case" data-accent="che" data-cat="ml research">
         <div class="case-top">
-          <span class="case-tag">CMU SCS · 2023</span>
-          <span class="case-where">drug discovery · research</span>
+          <span class="case-tag">CMU SCS Â· 2023</span>
+          <span class="case-where">drug discovery Â· research</span>
         </div>
         <h3>NRPS prediction with AlphaFold in the loop.</h3>
         <p class="lede-dim">Fused AlphaFold structure + sequence embeddings for sharper precision on a brutal enzyme-classification problem.</p>
         <details class="more">
           <summary>more</summary>
           <div class="more-body">
-            <p>ML research on Non-Ribosomal Peptide Synthetases — enzymes that build antibiotics and
+            <p>ML research on Non-Ribosomal Peptide Synthetases â enzymes that build antibiotics and
           immunosuppressants. Fused AlphaFold structural features with sequence embeddings for sharper
           precision/recall on a brutal classification problem.</p>
           </div>
@@ -1120,15 +1163,15 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case" data-accent="ai" data-cat="ml industry">
         <div class="case-top">
-          <span class="case-tag">HARLEY-DAVIDSON · 2023</span>
-          <span class="case-where">AI consultant · co-op</span>
+          <span class="case-tag">HARLEY-DAVIDSON Â· 2023</span>
+          <span class="case-where">AI consultant Â· co-op</span>
         </div>
         <h3>Who buys a t-shirt today and a motorcycle in three years?</h3>
-        <p class="lede-dim">Recommendation pipelines on AWS Personalize — segmenting the merch-to-motorcycle customer journey.</p>
+        <p class="lede-dim">Recommendation pipelines on AWS Personalize â segmenting the merch-to-motorcycle customer journey.</p>
         <details class="more">
           <summary>more</summary>
           <div class="more-body">
-            <p>Recommendation pipelines on AWS Personalize to segment Harley's customers — specifically the
+            <p>Recommendation pipelines on AWS Personalize to segment Harley's customers â specifically the
           merchandise-to-motorcycle conversion journey. Automated ingestion via S3 + Lambda; collaborative
           filtering + behavioral segmentation sharpened targeting on emerging youth demographics.</p>
           </div>
@@ -1141,7 +1184,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case" data-accent="che" data-cat="che research">
         <div class="case-top">
-          <span class="case-tag">CMU · 2023 · COURSE PROJECT</span>
+          <span class="case-tag">CMU Â· 2023 Â· COURSE PROJECT</span>
           <span class="case-where">advanced process control</span>
         </div>
         <h3>Nonlinear MPC for a CSTR that refuses to sit still.</h3>
@@ -1162,7 +1205,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case" data-accent="ai" data-cat="ml research">
         <div class="case-top">
-          <span class="case-tag">CMU · 2023 · COURSE PROJECT</span>
+          <span class="case-tag">CMU Â· 2023 Â· COURSE PROJECT</span>
           <span class="case-where">model-based RL</span>
         </div>
         <h3>Parking a simulated car with Gaussian Processes + MPC.</h3>
@@ -1182,7 +1225,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case" data-accent="ai" data-cat="ml research">
         <div class="case-top">
-          <span class="case-tag">CMU · 2023 · COURSE PROJECT</span>
+          <span class="case-tag">CMU Â· 2023 Â· COURSE PROJECT</span>
           <span class="case-where">adversarial ML</span>
         </div>
         <h3>Tricking a ResNet-18 with a stop sign and noise.</h3>
@@ -1203,7 +1246,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
       <article class="case" data-accent="che" data-cat="ml che research">
         <div class="case-top">
-          <span class="case-tag">CMU · 2022–23 · COURSEWORK</span>
+          <span class="case-tag">CMU Â· 2022â23 Â· COURSEWORK</span>
           <span class="case-where">materials + ML</span>
         </div>
         <h3>Polymer fingerprints &amp; glass-temperature CNNs.</h3>
@@ -1230,7 +1273,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <section id="exp">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 02 / 06</div>
+      <div class="sec-num">Â§ 02 / 06</div>
       <div>
         <h2 class="sec-title"><em>git log</em> --experience.</h2>
         <p class="sec-sub">The career, as commits. Most recent on top, squashed for readability.</p>
@@ -1242,21 +1285,21 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
       <article class="commit current">
         <div class="commit-head">
           <span class="sha">e38a0d</span>
-          <span class="branch">HEAD · main · origin/seattle</span>
-          <span class="date">Feb 2024 → now</span>
+          <span class="branch">HEAD Â· main Â· origin/seattle</span>
+          <span class="date">Feb 2024 â now</span>
         </div>
         <div class="commit-author">Author: Saaksshi &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="85eff6e4e4eef6f6edecc5e2e8e4ece9abe6eae8">[email&#160;protected]</a>&gt;</div>
         <div class="commit-title">feat(neuralix): ship ML platform, scale to enterprise clients</div>
         <div class="commit-body">
-          <b>Senior Data Scientist · Neuralix.ai · Remote</b>
+          <b>Senior Data Scientist Â· Neuralix.ai Â· Remote</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>First ML-eng hire; shaped product direction, scoping, and delivery pipeline.</li>
             <li>Designed + deployed time-series forecasting, anomaly detection, optimization in Python/PyTorch across energy, logistics, mining, and steel.</li>
             <li>Built LLM + agent workflows (structured prompting, tool-use, multi-step logic).</li>
             <li>Co-inventor on a filed patent: <i>Data Life Cycle Templatization Engine</i>.</li>
-            <li>Winner: Shell's Global Changemakers of Tomorrow 2024 — DeCarbonix.</li>
+            <li>Winner: Shell's Global Changemakers of Tomorrow 2024 â DeCarbonix.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · python · pytorch · airflow · aws · docker · llms</div>
+          <div class="commit-stack">stack Â· python Â· pytorch Â· airflow Â· aws Â· docker Â· llms</div>
         </div>
       </article>
 
@@ -1264,17 +1307,17 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         <div class="commit-head">
           <span class="sha">ha7d23</span>
           <span class="branch">feature/personalize</span>
-          <span class="date">Aug 2023 → Jan 2024</span>
+          <span class="date">Aug 2023 â Jan 2024</span>
         </div>
         <div class="commit-title">feat(harley): recommendation pipeline for customer journey</div>
         <div class="commit-body">
-          <b>AI Consultant · Harley-Davidson Motor Company · Remote</b>
+          <b>AI Consultant Â· Harley-Davidson Motor Company Â· Remote</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>End-to-end pipelines on AWS Personalize; S3 + Lambda ingestion + deployment.</li>
             <li>Reco system for merchandise-to-motorcycle customer segments.</li>
             <li>Collaborative filtering + behavioral segmentation for youth targeting.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · aws personalize · s3 · lambda · python</div>
+          <div class="commit-stack">stack Â· aws personalize Â· s3 Â· lambda Â· python</div>
         </div>
       </article>
 
@@ -1282,18 +1325,18 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         <div class="commit-head">
           <span class="sha">c51a23</span>
           <span class="branch">research/nrps</span>
-          <span class="date">May → Oct 2023</span>
+          <span class="date">May â Oct 2023</span>
         </div>
         <div class="commit-title">research(cmu-scs): NRPS prediction with AlphaFold features</div>
         <div class="commit-body">
-          <b>ML Graduate Research Assistant · Carnegie Mellon SCS · Pittsburgh</b>
+          <b>ML Graduate Research Assistant Â· Carnegie Mellon SCS Â· Pittsburgh</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>Engineered deep models predicting Non-Ribosomal Peptide Synthetases from long protein sequences.</li>
             <li>Integrated AlphaFold structural predictions with sequence features.</li>
             <li>Tuning ritual: dropout, augmentation, hyperparameters, CV.</li>
             <li>Downstream impact: drug discovery for antibiotics + immunosuppressants.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · pytorch · alphafold · dnn</div>
+          <div class="commit-stack">stack Â· pytorch Â· alphafold Â· dnn</div>
         </div>
       </article>
 
@@ -1301,17 +1344,17 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         <div class="commit-head">
           <span class="sha">uf7a88</span>
           <span class="branch">intern/scada</span>
-          <span class="date">May → Aug 2023</span>
+          <span class="date">May â Aug 2023</span>
         </div>
         <div class="commit-title">feat(uft): unify fragmented production data into a real framework</div>
         <div class="commit-body">
-          <b>Data Science Intern · Universal Fuel Technologies · Remote</b>
+          <b>Data Science Intern Â· Universal Fuel Technologies Â· Remote</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>Python architecture for data transfer + processing over lab-to-full-scale manufacturing data.</li>
             <li>Real-time KPI generation and optimization tooling.</li>
             <li>Re-architected unstructured datasets into a streamlined, queryable framework.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · python · scada · sql</div>
+          <div class="commit-stack">stack Â· python Â· scada Â· sql</div>
         </div>
       </article>
 
@@ -1319,17 +1362,17 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         <div class="commit-head">
           <span class="sha">ac7f01</span>
           <span class="branch">enterprise/maximo</span>
-          <span class="date">Aug 2021 → Aug 2022</span>
+          <span class="date">Aug 2021 â Aug 2022</span>
         </div>
         <div class="commit-title">chore(accenture): EAM for oil &amp; gas on IBM Maximo</div>
         <div class="commit-body">
-          <b>Application Development Associate · Accenture · Pune, India</b>
+          <b>Application Development Associate Â· Accenture Â· Pune, India</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>Enterprise Asset Management for a major Oil &amp; Gas client on IBM Maximo.</li>
             <li>Asset lifecycle, maintenance scheduling, data-integrity tracking.</li>
-            <li>Taught me most real problems aren't models — they're schema drift and stakeholder alignment.</li>
+            <li>Taught me most real problems aren't models â they're schema drift and stakeholder alignment.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · ibm maximo · enterprise integration</div>
+          <div class="commit-stack">stack Â· ibm maximo Â· enterprise integration</div>
         </div>
       </article>
 
@@ -1337,16 +1380,16 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         <div class="commit-head">
           <span class="sha">pk2020</span>
           <span class="branch">founder/pukhraj</span>
-          <span class="date">Jul 2020 → Sep 2021</span>
+          <span class="date">Jul 2020 â Sep 2021</span>
         </div>
         <div class="commit-title">ops(pukhraj herbals): MSME, marketing, 15,000 sanitizer bottles</div>
         <div class="commit-body">
-          <b>Business Manager &amp; R&amp;D Intern · Pukhraj Herbals · Mandsaur, MP</b>
+          <b>Business Manager &amp; R&amp;D Intern Â· Pukhraj Herbals Â· Mandsaur, MP</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>Marketing strategy + category creation for a small MSME during COVID.</li>
             <li>Developed an Ayurvedic hand-sanitizer formulation and ran production of 15,000 bottles.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · ayurveda · excel · grit</div>
+          <div class="commit-stack">stack Â· ayurveda Â· excel Â· grit</div>
         </div>
       </article>
 
@@ -1354,22 +1397,22 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
         <div class="commit-head">
           <span class="sha">dr0519</span>
           <span class="branch">intern/pharma</span>
-          <span class="date">May → Aug 2019</span>
+          <span class="date">May â Aug 2019</span>
         </div>
         <div class="commit-title">chore(dr-reddys): optimize decanter formulation process</div>
         <div class="commit-body">
-          <b>Chemical Engineering Intern · Dr. Reddy's Laboratories · Hyderabad</b>
+          <b>Chemical Engineering Intern Â· Dr. Reddy's Laboratories Â· Hyderabad</b>
           <details class="more"><summary>details</summary><div class="more-body"><ul>
             <li>Decanter formulation process optimization; separation efficiency gains.</li>
             <li>Safety compliance, risk management, regulatory adherence in pharmaceutical manufacturing.</li>
           </ul></div></details>
-          <div class="commit-stack">stack · unit ops · chemical process engineering</div>
+          <div class="commit-stack">stack Â· unit ops Â· chemical process engineering</div>
         </div>
       </article>
 
       <div class="commit-initial">
         <span class="sha">0000000</span>
-        <span class="msg">initial commit · b.tech chemical engineering begins · vit · jul 2017</span>
+        <span class="msg">initial commit Â· b.tech chemical engineering begins Â· vit Â· jul 2017</span>
       </div>
 
     </div>
@@ -1380,7 +1423,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <section id="research">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 03 / 06</div>
+      <div class="sec-num">Â§ 03 / 06</div>
       <div>
         <h2 class="sec-title">Papers, a <em>book chapter</em>, and a patent.</h2>
         <p class="sec-sub">Energy + industrial problems dressed up in optimization and deep learning.</p>
@@ -1389,65 +1432,65 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 
     <div class="pub-grid">
       <article class="pub-card">
-        <span class="corner-label">PAPER · 2025</span>
+        <span class="corner-label">PAPER Â· 2025</span>
         <div class="badge-row">
           <span class="tag che">CCS</span><span class="tag">MILP</span><span class="tag">optimization</span>
         </div>
-        <h3>Optimization of Carbon Capture &amp; Storage logistics — an integrated MILP approach for transport and storage.</h3>
-        <div class="meta">SPE Annual Technical Conference &amp; Exhibition (ATCE) · Houston · Oct 2025<br>
+        <h3>Optimization of Carbon Capture &amp; Storage logistics â an integrated MILP approach for transport and storage.</h3>
+        <div class="meta">SPE Annual Technical Conference &amp; Exhibition (ATCE) Â· Houston Â· Oct 2025<br>
         S. Jilhewar, S. Shikha, V. Jayaram</div>
-        <p class="lede-dim" style="margin:10px 0 0;">CO₂ transport + storage logistics, solved as one big MILP.</p>
+        <p class="lede-dim" style="margin:10px 0 0;">COâ transport + storage logistics, solved as one big MILP.</p>
         <details class="more"><summary>more</summary><div class="more-body"><div class="one-liner" style="margin:0;">
-          Integrated framework for CO₂ maritime transport, terminal ops, and geological injection — vessel scheduling,
+          Integrated framework for COâ maritime transport, terminal ops, and geological injection â vessel scheduling,
           inventory, and injection planning solved in one MILP so the CCUS chain stays synchronized.
         </div></div></details>
-        <div class="doi">DOI · 10.2118/228163-MS</div>
+        <div class="doi">DOI Â· 10.2118/228163-MS</div>
       </article>
 
       <article class="pub-card">
-        <span class="corner-label">PAPER · 2025</span>
+        <span class="corner-label">PAPER Â· 2025</span>
         <div class="badge-row">
           <span class="tag ai">deep learning</span><span class="tag che">lithium</span><span class="tag">brines</span>
         </div>
-        <h3>Unlocking lithium potential from oilfield brines — a deep-learning-driven resource assessment.</h3>
-        <div class="meta">URTeC (SPE/AAPG/SEG Unconventional Resources Tech Conference) · Houston · Jun 2025<br>
+        <h3>Unlocking lithium potential from oilfield brines â a deep-learning-driven resource assessment.</h3>
+        <div class="meta">URTeC (SPE/AAPG/SEG Unconventional Resources Tech Conference) Â· Houston Â· Jun 2025<br>
         S. Jilhewar, R. Singh, A. Der, R. Mercer, V. Jayaram</div>
-        <p class="lede-dim" style="margin:10px 0 0;">Deep-learning lithium-in-oilfield-brine prediction. Waste streams → resource maps.</p>
+        <p class="lede-dim" style="margin:10px 0 0;">Deep-learning lithium-in-oilfield-brine prediction. Waste streams â resource maps.</p>
         <details class="more"><summary>more</summary><div class="more-body"><div class="one-liner" style="margin:0;">
           Neural-net framework for lithium concentration prediction in oilfield brines, with preprocessing,
           feature transforms, and resampling to make the tail behave. Turns waste streams into a resource map.
         </div></div></details>
-        <div class="doi">DOI · 10.15530/urtec-2025-4261542</div>
+        <div class="doi">DOI Â· 10.15530/urtec-2025-4261542</div>
       </article>
 
       <article class="pub-card">
-        <span class="corner-label">BOOK CHAPTER · forthcoming</span>
+        <span class="corner-label">BOOK CHAPTER Â· forthcoming</span>
         <div class="badge-row">
           <span class="tag ai">AI</span><span class="tag che">CCUS</span><span class="tag">economics</span>
         </div>
-        <h3>AI-driven cost optimization in operations and transport management — a CCUS economics perspective.</h3>
-        <div class="meta">In <i>AI and Data Analytics</i> (AIDA) · ISBN 9781394384655</div>
+        <h3>AI-driven cost optimization in operations and transport management â a CCUS economics perspective.</h3>
+        <div class="meta">In <i>AI and Data Analytics</i> (AIDA) Â· ISBN 9781394384655</div>
         <p class="lede-dim" style="margin:10px 0 0;">How AI reshapes CCUS cost structure. Book chapter.</p>
         <details class="more"><summary>more</summary><div class="more-body"><div class="one-liner" style="margin:0;">
-          Book chapter on how AI + optimization reshapes the cost structure of CO₂ capture, transport, and storage
+          Book chapter on how AI + optimization reshapes the cost structure of COâ capture, transport, and storage
           operations. Published 2026.
         </div></div></details>
-        <div class="doi">ISBN · 978-1-394-38465-5</div>
+        <div class="doi">ISBN Â· 978-1-394-38465-5</div>
       </article>
 
       <article class="pub-card" style="border-color: color-mix(in oklab, var(--warn) 50%, var(--line));">
-        <span class="corner-label">PATENT · filed</span>
+        <span class="corner-label">PATENT Â· filed</span>
         <div class="badge-row">
           <span class="tag ai">AiOps</span><span class="tag">workflows</span>
         </div>
         <h3>Data Life Cycle Templatization Engine.</h3>
-        <div class="meta">Filed · co-inventor · Neuralix</div>
+        <div class="meta">Filed Â· co-inventor Â· Neuralix</div>
         <p class="lede-dim" style="margin:10px 0 0;">Reusable, editable AiOps workflow templates. Filed patent.</p>
         <details class="more"><summary>more</summary><div class="more-body"><div class="one-liner" style="margin:0;">
-          Reusable, editable data + AiOps workflow templates — so alerting and action don't have to be rebuilt for
+          Reusable, editable data + AiOps workflow templates â so alerting and action don't have to be rebuilt for
           every new client integration. Faster time-to-alert, traceable by design.
         </div></div></details>
-        <div class="doi">Status · filed, pending</div>
+        <div class="doi">Status Â· filed, pending</div>
       </article>
     </div>
   </div>
@@ -1457,7 +1500,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <section id="edu">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 04 / 06</div>
+      <div class="sec-num">Â§ 04 / 06</div>
       <div>
         <h2 class="sec-title">Two <em>transcripts</em>.</h2>
         <p class="sec-sub">One reactor, one ResNet. Both in the same brain.</p>
@@ -1471,10 +1514,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
             <div class="edu-where">Carnegie Mellon University</div>
             <div class="edu-school">College of Engineering</div>
           </div>
-          <div class="edu-gpa">GPA · 3.91 / 4.0</div>
+          <div class="edu-gpa">GPA Â· 3.91 / 4.0</div>
         </div>
-        <h3>M.S. · Artificial Intelligence Engineering — Chemical Engineering</h3>
-        <div class="edu-when">Aug 2022 — Dec 2023 · Pittsburgh, PA</div>
+        <h3>M.S. Â· Artificial Intelligence Engineering â Chemical Engineering</h3>
+        <div class="edu-when">Aug 2022 â Dec 2023 Â· Pittsburgh, PA</div>
         <p>
           Cross-disciplinary AI Eng track inside ChemE. Officer at <b>ChEMSA</b> (Chemical Engineering Master's
           Student Association). Research with the <a href="https://www.allthingsoptimal.com/" target="_blank">Laird
@@ -1493,10 +1536,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
             <div class="edu-where">Vellore Institute of Technology</div>
             <div class="edu-school">VIT University</div>
           </div>
-          <div class="edu-gpa">CGPA · 8.42 / 10</div>
+          <div class="edu-gpa">CGPA Â· 8.42 / 10</div>
         </div>
-        <h3>B.Tech · Chemical Engineering</h3>
-        <div class="edu-when">Jul 2017 — Jun 2021 · Vellore, India</div>
+        <h3>B.Tech Â· Chemical Engineering</h3>
+        <div class="edu-when">Jul 2017 â Jun 2021 Â· Vellore, India</div>
         <p>
           Core member of <b>AIChE</b>, board member of <b>Ayuda</b> (NGO), design head at <b>Flying Inc.</b>,
           environment team at <b>Nature's Club</b>. Undergrad research with the Colloids &amp; Polymers group (CAP Lab).
@@ -1510,14 +1553,78 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
   </div>
 </section>
 
+
+<!-- ============================= GOOGLE CLOUD CERTIFICATIONS ============================= -->
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">§ 05 / 07</div>
+      <div>
+        <h2 class="sec-title">Google Cloud <em>certifications</em>.</h2>
+        <p class="sec-sub">48 completion badges earned on <a href="https://www.skills.google/public_profiles/4de5b8ef-20d1-4bde-8359-30530c2e5648" target="_blank" rel="noopener">Google Skills</a> — Silver League · 15,700 pts · member since 2021.</p>
+      </div>
+    </div>
+    <div class="certs-grid" id="certs-grid">
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Introduction to Generative AI</div><div class="cert-date">Jun 2023</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Engineer Data for Predictive Modeling with BigQuery ML</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Data Engineering</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Logging</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Development</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Website on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Build a Website on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">IoT in the Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Baseline: Deploy &amp; Develop</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Exploring APIs</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Applied Data: Blockchain</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Create ML Models with BigQuery ML</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">BigQuery for Machine Learning</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud SQL</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">BigQuery for Data Warehousing</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Scientific Data Processing</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">NCAA March Madness: Bracketology with Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Workspace: Add-ons</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Use Machine Learning APIs on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Machine Learning APIs</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Derive Insights from BigQuery Data</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">BigQuery Basics for Data Analysts</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Prepare Data for ML APIs on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Build Interactive Apps with Google Assistant</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">OK Google: Build Interactive Apps with Google Assistant</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Google Cloud Solutions I: Scaling Your Infrastructure</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Baseline: Data, ML, AI</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Architecture: Design, Implement, and Manage</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Google Developer Essentials</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Implement Cloud Security Fundamentals on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Security &amp; Identity Fundamentals</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Architecture</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Intro to ML: Language Processing</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Implement DevOps Workflows in Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">DevOps Essentials</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Understand Your Google Cloud Costs</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Develop Your Google Cloud Network</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Engineering</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Deploy Kubernetes Applications on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Kubernetes in Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Automate Deployment and Manage Traffic on a Google Cloud Network</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Build a Secure Google Cloud Network</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Set Up an App Dev Environment on Google Cloud</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Baseline: Infrastructure</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Implementing Cloud Load Balancing for Compute Engine</div><div class="cert-date">May 2021</div></div>
+      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Google Cloud Essentials</div><div class="cert-date">May 2021</div></div>
+    </div>
+    <div style="margin-top:18px;">
+      <a class="btn" href="https://www.skills.google/public_profiles/4de5b8ef-20d1-4bde-8359-30530c2e5648" target="_blank" rel="noopener">↗ view full profile on Google Skills</a>
+    </div>
+  </div>
+</section>
 <!-- ============================= SKILLS ============================= -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 05 / 06</div>
+      <div class="sec-num">§ 06 / 07</div>
       <div>
         <h2 class="sec-title">The <em>periodic</em> table.</h2>
-        <p class="sec-sub">Not every skill I've touched — only the ones I'd put on a pull request.</p>
+        <p class="sec-sub">Not every skill I've touched â only the ones I'd put on a pull request.</p>
       </div>
     </div>
 
@@ -1535,7 +1642,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <section id="hobbies">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 06 / 06</div>
+      <div class="sec-num">§ 07 / 07</div>
       <div>
         <h2 class="sec-title">After <em>hours</em>.</h2>
         <p class="sec-sub">Off-the-clock inputs that somehow still shape the on-the-clock outputs.</p>
@@ -1550,10 +1657,10 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <div>© 2026 · Saaksshi Jilhewar · Seattle, WA</div>
+      <div>Â© 2026 Â· Saaksshi Jilhewar Â· Seattle, WA</div>
       <div style="margin-top:4px;">
-        <a href="/cdn-cgi/l/email-protection#89e3fae8e8e2fafae1e0c9eee4e8e0e5a7eae6e4"><span class="__cf_email__" data-cfemail="6a00190b0b01191902032a0d070b030644090507">[email&#160;protected]</span></a> ·
-        <a href="https://linkedin.com/in/saaksshi" target="_blank">linkedin</a> ·
+        <a href="/cdn-cgi/l/email-protection#89e3fae8e8e2fafae1e0c9eee4e8e0e5a7eae6e4"><span class="__cf_email__" data-cfemail="6a00190b0b01191902032a0d070b030644090507">[email&#160;protected]</span></a> Â·
+        <a href="https://linkedin.com/in/saaksshi" target="_blank">linkedin</a> Â·
         <a href="tel:+14124820976">+1 (412) 482-0976</a>
       </div>
       <div style="margin-top:8px; color:var(--ink-faint);">
@@ -1561,7 +1668,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
       </div>
     </div>
     <div class="foot-sig">
-      <div class="foot-sig-line">— end of file —</div>
+      <div class="foot-sig-line">â end of file â</div>
       <div class="foot-sig-sub">thanks for reading.</div>
     </div>
   </div>
@@ -1593,7 +1700,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
     </div>
   </div>
   <div class="tweak-row">
-    <label style="color:var(--ink-faint);">toggle · press T</label>
+    <label style="color:var(--ink-faint);">toggle Â· press T</label>
   </div>
 </div>
 
@@ -1601,9 +1708,9 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ----- TERMINAL TYPEWRITER ----- */
 const lines = {
-  typeA: "Saaksshi Jilhewar · Machine Learning Engineer · CMU AI Eng '23 · Seattle, WA.\nFluent in Python, SQL, stakeholder translation, and turning \"can AI do this?\" into a roadmap.",
-  typeB: "lego · pickleball · table-tennis · squash · tennis · board games · travel · vibe-coding on airport wifi.",
-  typeC: "Darwin saaksshi.local 24.0 Darwin Kernel Version: passionate-but-caffeinated · arm64"
+  typeA: "Saaksshi Jilhewar Â· Machine Learning Engineer Â· CMU AI Eng '23 Â· Seattle, WA.\nFluent in Python, SQL, stakeholder translation, and turning \"can AI do this?\" into a roadmap.",
+  typeB: "lego Â· pickleball Â· table-tennis Â· squash Â· tennis Â· board games Â· travel Â· vibe-coding on airport wifi.",
+  typeC: "Darwin saaksshi.local 24.0 Darwin Kernel Version: passionate-but-caffeinated Â· arm64"
 };
 function typeInto(id, text, speed=14, done){
   const el = document.getElementById(id);
