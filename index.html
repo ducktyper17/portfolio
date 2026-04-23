@@ -792,44 +792,6 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 /* ===================================================================
    CERTIFICATIONS — Google Cloud badges grid
 =================================================================== */
-.certs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-}
-.cert-badge {
-  border: 1px solid var(--line-2);
-  background: var(--panel);
-  border-radius: 8px;
-  padding: 12px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  transition: transform .12s, border-color .15s;
-  border-color: color-mix(in oklab, #4285f4 25%, var(--line-2));
-}
-.cert-badge:hover {
-  transform: translateY(-2px);
-  border-color: #4285f4;
-}
-.cert-icon {
-  font-size: 20px;
-  color: #4285f4;
-  line-height: 1;
-}
-.cert-name {
-  font-family: 'IBM Plex Sans', system-ui, sans-serif;
-  font-size: 12px;
-  color: var(--ink);
-  font-weight: 500;
-  line-height: 1.3;
-}
-.cert-date {
-  font-size: 10px;
-  color: var(--ink-faint);
-  letter-spacing: 0.06em;
-  margin-top: 2px;
-}
 </style>
 </head>
 <body>
@@ -847,7 +809,6 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
       <a href="#research">research</a>
       <a href="#edu">edu</a>
       <a href="#skills">skills</a>
-        <a href="#certs">certs</a>
       <a href="#hobbies">hobbies</a>
       <button id="mode-toggle" class="mode-toggle" aria-label="toggle dark/light mode" title="toggle theme">
         <svg class="sun-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -1551,77 +1512,18 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
       </article>
     </div>
   </div>
-</section>
-
-
-<!-- ============================= GOOGLE CLOUD CERTIFICATIONS ============================= -->
-<section id="certs">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-num">§ 05 / 07</div>
-      <div>
-        <h2 class="sec-title">Google Cloud <em>certifications</em>.</h2>
-        <p class="sec-sub">48 completion badges earned on <a href="https://www.skills.google/public_profiles/4de5b8ef-20d1-4bde-8359-30530c2e5648" target="_blank" rel="noopener">Google Skills</a> — Silver League · 15,700 pts · member since 2021.</p>
-      </div>
-    </div>
-    <div class="certs-grid" id="certs-grid">
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Introduction to Generative AI</div><div class="cert-date">Jun 2023</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Engineer Data for Predictive Modeling with BigQuery ML</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Data Engineering</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Logging</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Development</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Website on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Build a Website on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">IoT in the Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Baseline: Deploy &amp; Develop</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Exploring APIs</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Applied Data: Blockchain</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Create ML Models with BigQuery ML</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">BigQuery for Machine Learning</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud SQL</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">BigQuery for Data Warehousing</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Scientific Data Processing</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">NCAA March Madness: Bracketology with Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Workspace: Add-ons</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Use Machine Learning APIs on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Machine Learning APIs</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Derive Insights from BigQuery Data</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">BigQuery Basics for Data Analysts</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Prepare Data for ML APIs on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Build Interactive Apps with Google Assistant</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">OK Google: Build Interactive Apps with Google Assistant</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Google Cloud Solutions I: Scaling Your Infrastructure</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Baseline: Data, ML, AI</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Architecture: Design, Implement, and Manage</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Google Developer Essentials</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Implement Cloud Security Fundamentals on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Security &amp; Identity Fundamentals</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Architecture</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Intro to ML: Language Processing</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Implement DevOps Workflows in Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">DevOps Essentials</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Understand Your Google Cloud Costs</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Develop Your Google Cloud Network</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Cloud Engineering</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Deploy Kubernetes Applications on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Kubernetes in Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Automate Deployment and Manage Traffic on a Google Cloud Network</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Build a Secure Google Cloud Network</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Set Up an App Dev Environment on Google Cloud</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Baseline: Infrastructure</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Implementing Cloud Load Balancing for Compute Engine</div><div class="cert-date">May 2021</div></div>
-      <div class="cert-badge"><span class="cert-icon">☁</span><div class="cert-name">Google Cloud Essentials</div><div class="cert-date">May 2021</div></div>
-    </div>
-    <div style="margin-top:18px;">
-      <a class="btn" href="https://www.skills.google/public_profiles/4de5b8ef-20d1-4bde-8359-30530c2e5648" target="_blank" rel="noopener">↗ view full profile on Google Skills</a>
+    <div style="margin-top:22px;">
+      <a class="btn" href="https://www.skills.google/public_profiles/4de5b8ef-20d1-4bde-8359-30530c2e5648" target="_blank" rel="noopener">↗ Google Cloud Skills — Silver League · 48 badges</a>
     </div>
   </div>
 </section>
+
+
 <!-- ============================= SKILLS ============================= -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 06 / 07</div>
+      <div class="sec-num">§ 05 / 06</div>
       <div>
         <h2 class="sec-title">The <em>periodic</em> table.</h2>
         <p class="sec-sub">Not every skill I've touched â only the ones I'd put on a pull request.</p>
@@ -1642,7 +1544,7 @@ window.TWEAKS = /*EDITMODE-BEGIN*/{
 <section id="hobbies">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-num">§ 07 / 07</div>
+      <div class="sec-num">§ 06 / 06</div>
       <div>
         <h2 class="sec-title">After <em>hours</em>.</h2>
         <p class="sec-sub">Off-the-clock inputs that somehow still shape the on-the-clock outputs.</p>
